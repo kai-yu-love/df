@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>零售上架</title>
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./css/ggys.css">
+    <link rel="stylesheet" href="./css/lssj.css">
+</head>
+
+<body>
+    
+<div class="title">
+        <i class="iconfont icon-ico_leftarrow"></i>
+        <p>零售上架</p>
+        <span></span>
+    </div>
+    <div class="bor"></div>
+    <div class="messages">
+        <p>零售信息</p>
+    </div>
+    <div class="sfsj">
+        <p class="p1">是否上架销售</p>
+        <p class="p2 nj">
+            <img src="./img/kai.png" alt="" class="switch1">
+            <img src="./img/guan.png" alt="" class="switch2 switch3">
+        </p>
+    </div>
+    <div class="yes ">
+        <div class="prices">
+            <ul>
+                <li>
+                    <p class="p1">展厅标牌价 <span class="bx">*</span> </p>
+                    <p class="p2 cl">
+                        <span>元</span>
+                        <input type="number" max="3" placeholder="标牌价">
+                    </p>
+                </li>
+                <li>
+                    <p class="p1">网络价 <span class="bx">*</span></p>
+                    <p class="p2 cl">
+                        <span>元</span>
+                        <input type="number" max="3" placeholder="网络价">
+                    </p>
+                </li>
+                <li>
+                    <p class="p1">销售底价</p>
+                    <p class="p2 cl">
+                        <span>元</span>
+                        <input type="number" max="3" placeholder="销售底价">
+                    </p>
+                </li>
+                <li>
+                    <p class="p1">经理底价</p>
+                    <p class="p2 cl">
+                        <span>元</span>
+                        <input type="number" max="3" placeholder="经理底价">
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="messages">
+            <p>照片信息</p>
+        </div>
+        <div class="img-messages">
+            <ul>
+                <li>
+                    <div class="lefts">
+                        <img src="./img//one.jpg" alt="">
+                        <p>左前45度</p>
+                    </div>
+                    <div class="lefts">
+                        <img src="./img/two.jpg" alt="">
+                        <p>右后54度</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="lefts">
+                        <img src="./img//one.jpg" alt="">
+                        <p>引擎室</p>
+                    </div>
+                    <div class="lefts">
+                        <img src="./img/two.jpg" alt="">
+                        <p>天窗</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="lefts">
+                        <img src="./img//one.jpg" alt="">
+                        <p>铭牌</p>
+                    </div>
+                    <div class="lefts">
+                        <img src="./img/two.jpg" alt="">
+                        <p>仪表台(公里数)</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="lefts">
+                        <img src="./img//one.jpg" alt="">
+                        <p>驾驶舱工作台</p>
+                    </div>
+                    <div class="lefts">
+                        <img src="./img/two.jpg" alt="">
+                        <p>车辆内舱</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="lefts">
+                        <img src="./img//one.jpg" alt="">
+                        <p>后排</p>
+                    </div>
+                    <div class="lefts">
+                        <img src="./img/two.jpg" alt="">
+                        <p>备胎工具</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="messagess">
+                <p>车辆亮点描述</p>
+            </div>
+            <div class="ipts">
+                <textarea rows="4" cols="47" placeholder="你可以在这里输入"></textarea>
+            </div>
+            <div style="padding: 0 .2rem .3rem .2rem;">
+    
+                    <div class="btnh">
+                        <p>确定零售上架</p>
+                    </div>
+            </div>
+    </div>
+    <div style="height:12.1rem" class="none nones"></div>
+    <div style="padding: 0 .2rem .3rem .2rem;" class="xiajia    xiajia-actives">
+        <div class="btnh">
+            <p>确定零售下架</p>
+        </div>
+    </div>
+    
+        <script src="./js/jquery-1.12.4.js"></script>
+        <script>
+        $(function(){
+            $(".nj").click(function(){
+                $(".switch2").toggleClass("switch3")
+                $(".yes").toggleClass("yess")
+                $(".xiajia").toggleClass("xiajia-actives")
+                $(".none").toggleClass("nones")
+            })
+            
+        })
+        </script>
+</body>
+
+</html>

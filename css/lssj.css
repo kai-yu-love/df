@@ -1,0 +1,170 @@
+.title{
+    padding: .2rem .3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body{
+    position: relative;
+}
+.title .icon-ico_leftarrow{
+    color: #ea5137;
+}
+.title p{
+    font-size: .36rem;
+    color: #232323;
+    font-weight: normal;
+}
+.bor{
+    width: 100%;
+    height: 1px;
+    background: #a2a2a2;
+}
+.messages{
+    padding: .2rem .3rem;
+    background-color: #fafafa;
+    margin-top: .16rem;
+}
+.messages p{
+    font-size: .3rem;
+    color: #929292;
+}
+.sfsj{
+    padding: .3rem .3rem;
+    color: black;
+    font-size: .3rem;
+    overflow: hidden;
+    border-bottom: 1px solid #f2f2f6;
+}
+.sfsj .p1{
+    width: 50%;
+    float: left;
+}
+.sfsj .p2{
+    width: 50%;
+    position: relative;
+    float: right;
+}
+.sfsj .p2 img{
+    width: .8rem;
+    height: .45rem;
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.prices{
+    padding: 0 .3rem;
+}
+.prices li{
+    padding: .3rem 0;
+    border-bottom: 1px solid #f2f2f6;
+    overflow: hidden;
+}
+.prices li p{
+    color: black;
+    font-size: .3rem;
+}
+.prices li .p1{
+    width: 50%;
+    float: left;
+}
+.prices li .p1 .bx{
+   font-size: .3rem;
+   color: #f50b0b;
+}
+.prices li .p2{
+    width: 50%;
+    float: right;
+    height: .4rem;
+    line-height: .45rem;
+    position: relative;
+}
+.prices li .p2 span{
+    display: block;
+    float: right;
+}
+.prices li .p2 img{
+    width: .8rem;
+    height: .45rem;
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.switch3{
+    display: none;
+}
+.prices li .p2 input{
+    width: 1.2rem;
+    float: right;
+    text-align: right;
+    margin-right: .2rem;
+}
+.img-messages li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:.15rem .3rem .15rem  .3rem;
+}
+.img-messages li .lefts{
+    width: 48%;
+    height: 2rem;
+    position: relative;
+    
+}
+.img-messages li .lefts img{
+    width: 100%;
+    height: 2rem;
+}
+.img-messages li .lefts p{
+    font-size: .3rem;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: .6rem;
+    line-height: .6rem;
+    background: rgba(0,0,0,.8);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.messagess{
+    padding: .2rem .3rem;
+    background-color: #fafafa;
+}
+.messagess p{
+    font-size: .3rem;
+    color: #929292;
+}
+.ipts{
+    padding: .2rem .3rem;
+}
+.ipts textarea{
+    border-radius: 7px;
+}
+.btnh{
+    height: .9rem;
+    border-radius: 7px;
+    background: #eb6048;
+}
+.btnh p{
+    height: .9rem;
+    line-height: .9rem;
+    color: #fff;
+    font-size: .36rem;
+    text-align: center;
+}
+.yess{
+    display: none;
+}
+.xiajia-actives{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.nones{
+    display: none
+
+}
