@@ -144,6 +144,9 @@ body{
 }
 .ipts textarea{
     border-radius: 7px;
+    width: 90%;
+    height: 2rem;
+    outline:none
 }
 .btnh{
     height: .9rem;
