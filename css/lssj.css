@@ -139,6 +139,8 @@ body{
 }
 .ipts{
     padding: .2rem .3rem;
+    width: 100%;
+    overflow: hidden;
 }
 .ipts textarea{
     border-radius: 7px;
@@ -164,9 +166,7 @@ body{
     bottom: 0;
     left: 0;
 }
-.nones{
-    display: none
-}
+
 .ipts textarea{
     border: 1px solid #f2f2f6;
 }

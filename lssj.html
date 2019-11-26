@@ -29,7 +29,7 @@
             <img src="./img/guan.png" alt="" class="switch2 switch3">
         </p>
     </div>
-    <div class="yes ">
+    <div class="yes " style="overflow: hidden;">
         <div class="prices">
             <ul>
                 <li>
@@ -119,11 +119,11 @@
                 </li>
             </ul>
         </div>
-        <div class="messagess">
+            <div class="messagess">
                 <p>车辆亮点描述</p>
             </div>
             <div class="ipts">
-                <textarea rows="4" cols="48" placeholder="你可以在这里输入"></textarea>
+                <textarea rows="4" cols="100%" placeholder="你可以在这里输入"></textarea>
             </div>
             <div style="padding: 0 .2rem .3rem .2rem;">
                     <div class="btnh">
@@ -131,7 +131,7 @@
                     </div>
             </div>
     </div>
-    <div style="height:11rem" class="none nones"></div>
+    <!-- <div style="height:11rem" class="none nones"></div> -->
     <div style="padding: 0 .2rem .3rem .2rem;" class="xiajia    xiajia-actives">
         <div class="btnh">
             <p>确定零售下架</p>
@@ -145,7 +145,7 @@
                 $(".switch2").toggleClass("switch3")
                 $(".yes").toggleClass("yess")
                 $(".xiajia").toggleClass("xiajia-actives")
-                $(".none").toggleClass("nones")
+                // $(".none").toggleClass("nones")
             })
             
         })
