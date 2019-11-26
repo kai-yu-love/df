@@ -33,31 +33,31 @@
         <div class="prices">
             <ul>
                 <li>
-                    <p class="p1">展厅标牌价 <span class="bx">*</span> </p>
+                    <p class="p1 ztbpj">展厅标牌价  </p>
                     <p class="p2 cl">
                         <span>元</span>
-                        <input type="number" max="3" placeholder="标牌价">
+                        <input type="number" max="3" placeholder="标牌价" class="inpt1">
                     </p>
                 </li>
                 <li>
-                    <p class="p1">网络价 <span class="bx">*</span></p>
+                    <p class="p1 wlj">网络价 </p>
                     <p class="p2 cl">
                         <span>元</span>
-                        <input type="number" max="3" placeholder="网络价">
+                        <input type="number" max="3" placeholder="网络价" class="inpt2">
                     </p>
                 </li>
                 <li>
-                    <p class="p1">销售底价</p>
+                    <p class="p1 xsdj">销售底价</p>
                     <p class="p2 cl">
                         <span>元</span>
-                        <input type="number" max="3" placeholder="销售底价">
+                        <input type="number" max="3" placeholder="销售底价" class="inpt3">
                     </p>
                 </li>
                 <li>
-                    <p class="p1">经理底价</p>
+                    <p class="p1 jldj">经理底价</p>
                     <p class="p2 cl">
                         <span>元</span>
-                        <input type="number" max="3" placeholder="经理底价">
+                        <input type="number" max="3" placeholder="经理底价" class="inpt4">
                     </p>
                 </li>
             </ul>
@@ -128,7 +128,7 @@
                     <textarea placeholder="你可以在这里输入"></textarea>
                 </div>
             </div>
-            <div style="padding: 0 .2rem .3rem .2rem;">
+            <div style="padding: 0 .2rem .3rem .2rem;" class="putaway">
                     <div class="btnh">
                         <p>确定零售上架</p>
                     </div>
@@ -140,17 +140,54 @@
             <p>确定零售下架</p>
         </div>
     </div>
-    
+     
+    <div class="tsty ">
+        <p></p>
+    </div>
         <script src="./js/jquery-1.12.4.js"></script>
         <script>
         $(function(){
             $(".nj").click(function(){
                 $(".switch2").toggleClass("switch3")
-                $(".yes").toggleClass("yess")
+                $(".yes").toggleClass("nones")
                 $(".xiajia").toggleClass("xiajia-actives")
-                // $(".none").toggleClass("nones")
             })
+            $(".putaway").click(function(){
+                var ztbpj = $(".ztbpj").text()
+                var wlj = $(".wlj").text()
+                var xsdj = $(".xsdj").text()
+                var jldj = $(".jldj").text()
+                if($(".inpt1").val()==""){
+                    $(".tsty p").html("请填" + ztbpj + "!")
             
+                    $(".tsty").addClass("tstys")
+                    setTimeout(() => {
+                        $(".tsty").removeClass("tstys")
+                    }, 2000);
+                }
+                if($(".inpt2").val()==""){
+                    $(".tsty p").html( "请填" +wlj + "!")
+                    $(".tsty").addClass("tstys")
+                    setTimeout(() => {
+                        $(".tsty").removeClass("tstys")
+                    }, 2000);
+                }
+                if($(".inpt3").val()==""){
+                    $(".tsty p").html("请填" +xsdj + "!")
+                    $(".tsty").addClass("tstys")
+                    setTimeout(() => {
+                        $(".tsty").removeClass("tstys")
+                    }, 2000);
+                }
+                if($(".inpt4").val()==""){
+                    $(".tsty p").html("请填" +jldj + "!")
+                    $(".tsty").addClass("tstys")
+                        setTimeout(() => {
+                        $(".tsty").removeClass("tstys")
+                    }, 2000);
+                }
+            })
+
         })
         </script>
 </body>
