@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>零售上架</title>
@@ -12,7 +10,6 @@
     <link rel="stylesheet" href="./css/lssj.css">
 </head>
 <body>
-    
 <div class="title">
         <i class="iconfont icon-ico_leftarrow"></i>
         <p>零售上架</p>
@@ -140,7 +137,6 @@
             </div>
             <div style="height: .5rem;"></div>
     </div>
-    <!-- <div style="height:11rem" class="none nones"></div> -->
     <div  class="xiajia    xiajia-actives">
         <div style="padding: 0 .3rem;">
 
@@ -167,24 +163,22 @@
                 var wlj = $(".wlj").text()
                 var xsdj = $(".xsdj").text()
                 var jldj = $(".jldj").text()
-               
                 if($("#inpt1").val()==""){
                     $(".tsty p").html("请填" + ztbpj + "!")
-            
                     $(".tsty").addClass("tstys")
                     setTimeout(() => {
                         $(".tsty").removeClass("tstys")
                     }, 2000);
-                    return false;
-                }
-                if($("#inpt2").val()==""){
+                    // return false;
+                } else   if($("#inpt2").val()==""){
                     $(".tsty p").html( "请填" +wlj + "!")
                     $(".tsty").addClass("tstys")
                     setTimeout(() => {
                         $(".tsty").removeClass("tstys")
                     }, 2000);
-                    return false;
+                    // return false;
                 }
+              
             })
         </script>
 </body>
