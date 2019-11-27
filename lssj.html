@@ -33,31 +33,33 @@
         <div class="prices">
             <ul>
                 <li>
-                    <p class="p1 ztbpj">展厅标牌价  </p>
+                    <p class="p1 ztbpj">展厅标牌价</p>
+                    <p class="p3">*</p>
                     <p class="p2 cl">
                         <span>元</span>
-                        <input type="number" max="3" placeholder="标牌价" class="inpt1">
+                        <input type="number" max="3" placeholder="标牌价" id="inpt1">
                     </p>
                 </li>
                 <li>
-                    <p class="p1 wlj">网络价 </p>
+                    <p class="p1 wlj css">网络价</p>
+                    <p class="p3">*</p>
                     <p class="p2 cl">
                         <span>元</span>
-                        <input type="number" max="3" placeholder="网络价" class="inpt2">
+                        <input type="number" max="3" placeholder="网络价" id="inpt2">
                     </p>
                 </li>
                 <li>
                     <p class="p1 xsdj">销售底价</p>
                     <p class="p2 cl">
                         <span>元</span>
-                        <input type="number" max="3" placeholder="销售底价" class="inpt3">
+                        <input type="number" max="3" placeholder="销售底价" id="inpt3">
                     </p>
                 </li>
                 <li>
                     <p class="p1 jldj">经理底价</p>
                     <p class="p2 cl">
                         <span>元</span>
-                        <input type="number" max="3" placeholder="经理底价" class="inpt4">
+                        <input type="number" max="3" placeholder="经理底价" id="inpt4">
                     </p>
                 </li>
             </ul>
@@ -128,19 +130,25 @@
                     <textarea placeholder="你可以在这里输入"></textarea>
                 </div>
             </div>
-            <div style="padding: 0 .2rem .3rem .2rem;" class="putaway">
-                    <div class="btnh">
-                        <p>确定零售上架</p>
-                    </div>
+            <div  class="putaway">
+                <div style="padding: 0 .3rem;">
+                        <div class="btnh">
+                                <p>确定零售上架</p>
+                            </div>
+                </div>
+                    
             </div>
+            <div style="height: .5rem;"></div>
     </div>
     <!-- <div style="height:11rem" class="none nones"></div> -->
-    <div style="padding: 0 .2rem .3rem .2rem;" class="xiajia    xiajia-actives">
-        <div class="btnh">
-            <p>确定零售下架</p>
+    <div  class="xiajia    xiajia-actives">
+        <div style="padding: 0 .3rem;">
+
+            <div class="btnh">
+                <p>确定零售下架</p>
+            </div>
         </div>
     </div>
-     
     <div class="tsty ">
         <p></p>
     </div>
@@ -152,43 +160,32 @@
                 $(".yes").toggleClass("nones")
                 $(".xiajia").toggleClass("xiajia-actives")
             })
-            $(".putaway").click(function(){
+        })
+
+        $(".putaway").click(function(){
                 var ztbpj = $(".ztbpj").text()
                 var wlj = $(".wlj").text()
                 var xsdj = $(".xsdj").text()
                 var jldj = $(".jldj").text()
-                if($(".inpt1").val()==""){
+               
+                if($("#inpt1").val()==""){
                     $(".tsty p").html("请填" + ztbpj + "!")
             
                     $(".tsty").addClass("tstys")
                     setTimeout(() => {
                         $(".tsty").removeClass("tstys")
                     }, 2000);
+                    return false;
                 }
-                if($(".inpt2").val()==""){
+                if($("#inpt2").val()==""){
                     $(".tsty p").html( "请填" +wlj + "!")
                     $(".tsty").addClass("tstys")
                     setTimeout(() => {
                         $(".tsty").removeClass("tstys")
                     }, 2000);
-                }
-                if($(".inpt3").val()==""){
-                    $(".tsty p").html("请填" +xsdj + "!")
-                    $(".tsty").addClass("tstys")
-                    setTimeout(() => {
-                        $(".tsty").removeClass("tstys")
-                    }, 2000);
-                }
-                if($(".inpt4").val()==""){
-                    $(".tsty p").html("请填" +jldj + "!")
-                    $(".tsty").addClass("tstys")
-                        setTimeout(() => {
-                        $(".tsty").removeClass("tstys")
-                    }, 2000);
+                    return false;
                 }
             })
-
-        })
         </script>
 </body>
 

@@ -63,8 +63,17 @@
     font-size: .3rem;
 }
 .prices li .p1{
-    width: 50%;
+  
+    width: 23%;
     float: left;
+}
+
+.prices li .p3{
+    height: .08rem;
+    padding-top: .08rem;
+    width: 25%;
+    float: left;
+    color:#ff8040 !important;
 }
 .prices li .p1 .bx{
    font-size: .3rem;
@@ -97,6 +106,10 @@
     float: right;
     text-align: right;
     margin-right: .2rem;
+}
+.css{
+    
+    width: 15% !important;
 }
 .img-messages li{
     display: flex;
@@ -137,6 +150,7 @@
 .ipts{
     /* padding: .2rem .3rem; */
     width: 100%;
+    margin-bottom: .5rem;
     /* overflow: hidden; */
 }
 .ipts textarea{
@@ -162,9 +176,7 @@ input,button,select,textarea{outline:none}
 .nones{
     display: none;
 }
-.xiajia{
-    margin-top: 12rem;
-}
+
 .xiajia-actives{
     display: none;
 }
@@ -193,4 +205,16 @@ input,button,select,textarea{outline:none}
 }
 .tstys{
     display: block;
+}
+.xiajia{
+    width: 100%;
+    position: fixed;
+        left: 0;
+        bottom: .3rem;
+}
+.putaway{
+    width: 100%;    
+    position: fixed;
+        left: 0;
+        bottom: .3rem;
 }
